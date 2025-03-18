@@ -1,5 +1,5 @@
-import { DrawerLayout } from '../components';
+import { RootContainer } from '../components'
 
 export default function Home() {
-  return <DrawerLayout />;
+  return <RootContainer />
 }
