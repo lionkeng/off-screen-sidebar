@@ -1,0 +1,70 @@
+@reference "tailwindcss";
+
+@layer components {
+  .drawer {
+    @apply fixed top-0 bottom-0 right-0 bg-amber-100 p-8 overflow-auto shadow-xl 
+      transform translate-x-full transition-transform duration-300 ease-out will-change-transform z-50;
+    width: var(--drawer-width-default);
+  }
+
+  /* Responsive width adjustments using media queries */
+  @media (min-width: 768px) {
+    .drawer {
+      width: var(--drawer-width-md);
+      @apply z-auto;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .drawer {
+      width: var(--drawer-width-lg);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .drawer {
+      width: var(--drawer-width-xl);
+    }
+  }
+
+  /* Drawer is visible when checkbox is checked */
+  .peer:checked ~ .drawer {
+    @apply translate-x-0;
+  }
+
+  .header {
+    @apply flex justify-between items-center mb-6;
+  }
+
+  .title {
+    @apply text-2xl font-bold;
+  }
+
+  .closeButton {
+    @apply rounded-full p-1 cursor-pointer hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400;
+  }
+
+  .closeIcon {
+    @apply h-6 w-6;
+  }
+
+  .content {
+    @apply flex flex-col space-y-4;
+  }
+
+  .contentBlock {
+    @apply h-40 flex items-center justify-center rounded-md;
+  }
+
+  .contentBlock1 {
+    @apply bg-amber-200;
+  }
+
+  .contentBlock2 {
+    @apply bg-amber-300;
+  }
+
+  .contentBlock3 {
+    @apply bg-amber-400;
+  }
+}
