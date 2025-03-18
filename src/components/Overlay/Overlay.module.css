@@ -1,20 +1,15 @@
 .overlay {
-  position: fixed;
-  inset: 0; /* top, right, bottom, left = 0 */
-  background-color: rgba(0, 0, 0, 0.3); /* bg-black/30 */
-  z-index: 40;
-  display: none;
-  cursor: pointer;
+  @apply fixed inset-0 bg-black/30 z-40 hidden cursor-pointer;
 }
 
 /* Show overlay when drawer is open on mobile */
 :global(.peer:checked) ~ .overlay {
-  display: block;
+  @apply block;
 }
 
 /* Hide overlay on medium screens and above */
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* md */
   :global(.peer:checked) ~ .overlay {
-    display: none;
+    @apply hidden;
   }
 }
