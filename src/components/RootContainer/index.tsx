@@ -12,8 +12,8 @@ export function RootContainer({
 }: RootContainerProps) {
   return (
     <div className="flex h-screen w-full relative">
-      <MainContent toggleId={toggleId} />
       <DrawerToggle id={toggleId} />
+      <MainContent toggleId={toggleId} />
       <Overlay toggleId={toggleId} />
       <Drawer toggleId={toggleId} />
     </div>

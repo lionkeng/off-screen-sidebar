@@ -6,7 +6,7 @@ export function MainContent({ toggleId }: MainContentProps) {
   return (
     <main
       className="bg-blue-100 p-8 w-full transition-all duration-300 ease-out 
-      peer-checked:md:w-[55%] peer-checked:lg:w-[65%] peer-checked:xl:w-[70%]"
+      peer-checked:max-sm:w-full peer-checked:md:w-[calc(100%-var(--drawer-width-default))] peer-checked:md:w-[calc(100%-var(--drawer-width-md))] peer-checked:lg:w-[calc(100%-var(--drawer-width-lg))] peer-checked:xl:w-[calc(100%-var(--drawer-width-xl))]"
     >
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-6">Main Content</h1>

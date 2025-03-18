@@ -11,6 +11,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Drawer width variables */
+  --drawer-width-default: 80%;
+  --drawer-width-md: 45%;
+  --drawer-width-lg: 40%;
+  --drawer-width-xl: 30%;
 }
 
 @theme inline {

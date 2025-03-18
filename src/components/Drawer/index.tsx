@@ -6,7 +6,7 @@ export function Drawer({ toggleId }: DrawerProps) {
   return (
     <aside className="fixed top-0 bottom-0 right-0 bg-amber-100 p-8 overflow-auto shadow-xl 
       transform translate-x-full transition-transform duration-300 ease-out will-change-transform
-      w-4/5 z-50 md:w-[45%] md:z-auto lg:w-[35%] xl:w-[30%] drawer peer-checked:translate-x-0">
+      w-[var(--drawer-width-default)] z-50 md:w-[var(--drawer-width-md)] md:z-auto lg:w-[var(--drawer-width-lg)] xl:w-[var(--drawer-width-xl)] drawer peer-checked:translate-x-0">
       
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold">Drawer Content</h2>
