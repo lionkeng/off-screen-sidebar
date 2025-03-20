@@ -8,12 +8,17 @@ export default function Home() {
         This is the main content area. When the drawer is opened, this section
         will resize on desktop screens or be overlapped on mobile screens.
       </p>
+      <button
+        type="button"
+        className="px-4 py-2 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 cursor-pointer rounded-md font-bold"
+      >
+        Quick Chat
+      </button>
       <label
         htmlFor={toggleId}
-        className="inline-block px-4 py-2 bg-indigo-600 text-white rounded-md 
-          hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 cursor-pointer"
+        className="fixed top-2 right-2 px-3 py-2 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 cursor-pointer rounded-full font-bold"
       >
-        Open Drawer
+        AI
       </label>
     </main>
   )

@@ -13,7 +13,7 @@ export function RootContainer({
   children,
 }: RootContainerProps) {
   return (
-    <div className="flex h-screen w-full relative">
+    <div className="flex min-h-dvh w-full relative">
       <DrawerToggle id={toggleId} />
       <MainContent>{children}</MainContent>
       <Overlay toggleId={toggleId} />
